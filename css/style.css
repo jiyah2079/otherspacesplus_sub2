@@ -1,0 +1,280 @@
+@charset "utf-8"; html{scroll-behavior: smooth; overflow-y: scroll;}
+*{margin:0; padding:0;}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color:#333;}
+body{font-size: 14px; line-height: 24px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	color: #333;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;  /*스크롤움직임 없애기위해 넣음*/
+}
+
+/* 폰트 */
+.title_top{font-family: 'Black Han Sans', sans-serif;
+	font-size: 50px;color: #1a1a1a;
+	padding: 150px 0 30px 0;
+}
+.title{font-family: 'Black Han Sans', sans-serif;
+	font-size: 50px; color: #1a1a1a;
+	padding: 200px 0 30px 0;
+}
+.sub_title{padding-bottom: 70px;}
+.font_l{font-size: 50px; font-weight: 900; color: #1a1a1a;}
+.font_m{font-size: 25px;}
+.font_bold{font-family: 'Black Han Sans', sans-serif; font-size: 20px;}
+
+
+/* header */
+
+.scroll-menu{width: 100%; margin: 0 auto; background: #fff; position: absolute; z-index: 100;}
+.header_inner{width: 1200px; margin: 0 auto;
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+}
+.logo{display: block; float: left; width: 15%; padding: 30px 0;}
+.logo img{width: 180px;}
+
+.nav{float: left; padding: 0 146px;} 
+.nav>li{float: left;}
+.nav>li>a{display: block; 
+	font-size: 20px;
+	font-weight: 700;
+	padding: 35px 40px;
+}
+.nav>li>a:hover{color:#10acb4;}
+
+.sub_inner{display: none; 
+	background:#10acb4;
+	border-radius:100px;
+	box-sizing:border-box; z-index: 200;
+}
+.sub_inner1{position: absolute; top: 74px; /* left: 667px; */}
+.sub_inner2{position: absolute; top: 74px; /* left: 835px; */}
+.sub_inner3{position: absolute; top: 74px; /* left: 1000px; */}
+.sub_inner4{position: absolute; top: 74px; /* left: 1133px; */}
+.sub{margin: 0 30px;}
+.sub1{width: 382px;}
+.sub2{width: 616px;}
+.sub3{width: 436px;}
+.sub4{width: 215px;}
+.sub li{float: left;}
+.sub li a{display: block; 
+	padding: 15px 30px; 
+	color: #fff; font-size: 16px; font-weight: 700;	
+}
+.sub li a:hover{color: #ccc;}
+.scroll-fixed{position: fixed; top: 0px;}
+
+.icon{float: right;}
+.icon li{float: left;}
+.icon li a{display: block;
+	padding: 30px 5px;
+}
+.icon li img{display: block;
+	width: 24px; height: 30px;}
+.icon li:nth-child(1) a{padding-left: 0}
+.icon li a:hover{opacity: 0.5;}
+
+
+
+/* 메인 배너 이미지 */
+
+.mainbanner{width: 100%; /* height: 744px;  */margin: 0 auto; overflow: hidden; clear: both;} 
+.mainbanner img{width:100%;	display:block; margin-top: 94px;}
+
+
+/* 메뉴 : lnb */
+.lnb_box{margin: 50px auto; width: 752px; height: 60px; margin-bottom: 0;
+	border-radius:100px; background: #eee;
+}
+.lnb li{float: left;}
+.lnb li a{display: block;
+	padding: 18px 50px;
+	font-size: 15px; font-weight: 700;	
+}
+.lnb li a:hover{background:#10acb4;
+	border-radius:100px;
+	color: #fff;
+}
+
+
+/* section */
+
+/* contents1 : 진행중인 전시 */
+
+#contents1{width: 100%; margin: 0 auto; overflow: hidden;}
+.textbox{width: 1200px; margin: 0 auto; height: 400px;
+	background: url(../images/exhibition.png) no-repeat top right;
+	text-align: left;
+}
+.textbox p{padding-top: 30px;}
+.textbox h4{padding-top: 30px;}
+.textbox h5{padding-top: 35px; padding-bottom: 10px;}
+.textbox .date{padding: 30px 0;}
+
+
+/* contents2 : 작가소개 */
+
+#contents2{width: 100%; margin: 0 auto; overflow: hidden; padding-top: 200px;}
+.textbox_bg{width: 100%; margin: 0 auto;
+	background: url(../images/Artist.png) no-repeat top center;}
+.textbox1{
+	/* width: 1200px;  */
+	margin: 0 auto; height: 755px; 
+	padding-right: 18.5%;	
+	text-align: right; color: #fff;
+	
+
+}
+
+
+.white{color: #fff;}
+.textbox1 p{padding-top: 30px;}
+.textbox1 h4{padding-top: 30px;}
+.textbox1 h5{padding-top: 35px; padding-bottom: 10px;}
+
+
+/* contents3 : 주요 작품 소개 */
+
+#contents3{
+	/* width: 1920px;  */
+	
+	margin: 20px auto; height: 1735px; overflow: hidden; 
+	background: url(../images/con3_bg.png) no-repeat 0 0; 
+	background-size: cover;
+}
+.con3_inner{width: 1200px; margin: 0 auto;}
+.con3_ul1{float: right;}
+.con3_ul1 li{float: left;}
+.con3_ul2{float: left; padding-bottom: 50px;}
+.con3_ul2 li{float: left;}
+.con3_inner ul li:nth-child(2) {padding-left: 100px; padding-top: 200px;}
+.con3_inner p{padding-top: 15px;}
+
+
+/* 이벤트배너 */
+
+#event_banner{width: 100%; height:497px;
+	background: url(../images/event_banner.png) no-repeat center top ;
+	margin: 0 auto;
+	 margin-top: -50px;}
+
+
+/* contents4 : 예약하기 */
+#contents4{width: 100%; margin: 0 auto; text-align: center;}
+.reservation{width: 1200px; margin: 0 auto; display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.reservation li{float: left;}
+.button{display: inline; padding: 15px 130px; 
+	background: #10acb4; border-radius: 100px;
+	color: #fff;
+}
+input{background: #eee; padding: 20px 15px 20px 80px;
+	font-size: 14px; line-height: 24px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	color: #333;
+	width: 350px;
+	border: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    /* -webkit-appearance: none; */
+}
+input {background: url('../images/con4_icon1.png') no-repeat 50% 50% #eee;}
+input:focus {outline:2px solid #10acb4;}
+select{background: #eee; padding: 20px 0 20px 80px;
+	font-size: 14px; line-height: 24px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	color: #333;
+	width: 350px;
+    border: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+} 
+.select2 {background: url('../images/con4_icon2.png') no-repeat 50% 50% #eee;}
+.select3 {background: url('../images/con4_icon3.png') no-repeat 50% 50% #eee;}
+
+
+/* contents5 */
+#contents5{width: 100%; margin: 0 auto;}
+.inform{width: 1200px; margin: 0 auto; position: relative; height: 700px;}
+.inform>li{float: left; width: 33.333%;}
+.inform>li>a{display: block;
+    padding: 20px 0;
+	text-align: center;
+    background: #eee;
+	font-size: 16px; font-weight: 600;
+}
+.inform>li.on>a{background: #10acb4; color: #fff;
+    font-weight: bold;
+}
+.inform li.on div{width: 100%; height: 400px;   
+    position: absolute;
+    top: 64px; left: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.inform>li>div{height: 0; overflow: hidden;}
+.inform1 table{width: 100%; border-collapse: collapse;}
+.inform1 table td{width: 33.3%; border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid; padding: 15px 0;
+}
+.inform1 table th{width: 33.3%; border-top: 2px #10acb4 solid;
+	border-bottom: 2px #10acb4 solid; padding: 15px 0;
+}
+.inform1 p{text-align: left;}
+.inform2 .inform3{width: 1200px; margin: 0 auto; text-align: left;}
+.inform2 p{text-align: left;}
+.inform3 p{text-align: left;}
+.inform3 span{font-size: 16px; color: #10acb4;}
+
+
+/* footer */
+footer{width: 100%; background: #333; margin-top: -50px; overflow: hidden;}
+.footer_inner{width: 1200px; height: 300px; 
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo2{display: block;}
+.logo2 img{width: 180px;}
+.footer_link li{float: left;}
+.footer_link li a{display: block;
+	font-size: 16px;
+	padding: 0 20px;
+	border-left: 1px solid #959595;
+	color: #959595;
+}
+.footer_link li a:hover{color: #fff;}
+.footer_text{color: #959595; text-align: left;}
+.footer_p{clear: both; padding-top: 35px;}
+.footer_link li:nth-child(1) a{border-left: 0;
+	padding-left: 0;
+}
+.icon2 li{float: left;}
+.icon2 li a{display: block;
+	padding-left: 10px;
+}
+.icon2 li:nth-child(1) a{padding-left: 0;}
+.icon2 li a img{width: 24px; height: 30px;
+}
+.icon2 li a:hover{opacity: 0.5;}
+
+
+
+
+
